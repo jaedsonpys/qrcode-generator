@@ -92,8 +92,8 @@
     <hr>
     <main>
         <h2>Enter the text/link to QRCode</h2>
-        <form action="/make" enctype="application/x-www-form-urlencoded">
-            <input type="text" class="text" placeholder="URL/Text">
+        <form action="/make" method="get" enctype="application/x-www-form-urlencoded">
+            <input type="text" class="text" placeholder="URL/Text" name="content">
             <button type="submit">Generate</button>
         </form>
     </main>
