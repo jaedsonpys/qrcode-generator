@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCode Generator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 10px 20px 20px;
+        }
+
+        hr {
+            color: blueviolet;
+        }
+        
+        header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: blueviolet;
+        }
+
+        header a {
+            color: black;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+
+        main h2 {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QRCode Generator</h1>
+        <a href="https://github.com/jaedsonpys">@jaedsonpys</a>
+    </header>
+    <hr>
+    <main>
+        <h2>Scan your QRCode:</h2>
+        <img src="<%=src%>" height="200px">
+    </main>
+</body>
+</html>
