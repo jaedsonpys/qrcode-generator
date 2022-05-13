@@ -5,12 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRCode Generator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 10px 20px 20px;
+        }
+
+        hr {
+            color: blueviolet;
+        }
+        
+        header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: blueviolet;
+        }
+
+        header a {
+            color: black;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+
+        main h2 {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        form input {
+            margin-top: 10px;
+            background-color: aliceblue;
+
+            height: 40px;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px solid gray;
+
+            outline-width: 1px;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 15px;
+            border: none;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            border-radius: 5px;
+            background-color: rgb(157, 97, 212);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            transition: 300ms;
+        }
+
+        form button:hover {
+            background-color: blueviolet;
+        }
+
+        form button:focus {
+            background-color: rgb(156, 156, 156);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>QRCode Generator</h1>
         <a href="https://github.com/jaedsonpys">@jaedsonpys</a>
     </header>
+    <hr>
     <main>
         <h2>Enter the text/link to QRCode</h2>
         <form action="/make" enctype="application/x-www-form-urlencoded">
